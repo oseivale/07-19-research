@@ -1,0 +1,68 @@
+ruby 2.4.4p296 (2018-03-28 revision 63013) [x86_64-linux]
+
+how to do I update my version of ruby so that I can
+use docs that refer to the version 2.5.1 core
+
+Read the docs
+Try out the method in irb using a few different values
+Once you feel like you understand how it works, write down
+its arguments (name, data type, optional/required, default value if any)
+its return type
+Write an example (in code) of how to use the method
+run your code to make sure your example is valid!
+
+[STRING]
+length(String)- .length
+  returns an integer that reps the # of characters in a string
+
+strip (.strip)
+  returns copy of the string with leading/trailing whitespace removed
+split (string) - .split
+  returns an array; you can pass an argument that represents a delimiter, that will
+  be used to break the string into an array
+start_with?
+  returns a boolean; will return true of the string starts with one of the
+  prefixes given
+
+
+[ARRAY]
+  first
+    returns an object or nil; will return the first element or the first 'n'
+    elements of the ARRAY
+
+  delete_at
+    returns an object or nil; you pass the requested index of the array as an argument
+    and at that specific index, it will delete the element, or return nil if the index is out of
+    range
+  delete(obj)
+    accepts an object as an argument, and will return all items from self (the array) that match
+    the object that is passed as an argument; you can also provide an optional code block in curly braces
+    to be displayed if the object to be deleted is not found in the array
+  pop
+    will remove the last element from the array, and return the that element- returns nil is the array
+    is empty
+
+[HASH]
+
+    to_a
+      returns an array- converts hash to a nested array of [key, value] arrays
+has_key?
+  returns boolean; returns true if the given key is present in the hash
+  pass the key as an argument to check
+has_value?
+  returns boolean; will return true is the given value is present for some key in a hash
+  pass the value as the argument to check
+
+[TIME]
+
+  now
+    creates a new instance of the time object for the current time
+    returns the time
+
+[FILE]
+    exist?
+      pass a file_name as the argument and it will return a boolean value of either
+      true or false depending on whether the named file exists or not
+    extname
+      pass a path as the argument it will return a string; returns the extension
+      (the portion of the file name in path starting from the last period)
